@@ -51,7 +51,7 @@ Justo nec ultrices dui sapien eget mi. Aliquam malesuada bibendum arcu vitae. Co
 ## **Antibodies**  
 * ~~*N/A*~~
 
-<img src="/assets/placeholder.png">
+![Placeholder image](/assets/placeholder.png)
 
 Sit amet tellus [cras adipiscing enim](https://www.google.com/).
 
