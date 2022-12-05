@@ -54,7 +54,7 @@ Justo nec ultrices dui sapien eget mi. Aliquam malesuada bibendum arcu vitae. Co
 Sit amet tellus [cras adipiscing enim](https://www.google.com/).
 
 
-{% include spatial_seq.md items="fastq.gz, tiff" file="directory-schema_spatialseq_v1.yaml" caption="Directory Structure" %}
+{% include about.md items="fastq.gz, tiff" file="directory-schema_spatialseq_v1.yaml" caption="Directory Structure" %}
 {% assign tableItems = include.items | split: ", " %}
 {% assign tableFileParam = {{include.file}} %}
 {% assign tableFile = site.data[tableFileParam] %}
