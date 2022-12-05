@@ -53,6 +53,39 @@ Justo nec ultrices dui sapien eget mi. Aliquam malesuada bibendum arcu vitae. Co
 
 Sit amet tellus [cras adipiscing enim](https://www.google.com/).
 
+
+{% include spatial_seq.md items="fastq.gz, tiff" file="directory-schema_spatialseq_v1.yaml" caption="Directory Structure" %}
+{% assign tableItems = include.items | split: ", " %}
+{% assign tableFileParam = {{include.file}} %}
+{% assign tableFile = site.data[tableFileParam] %}
+
+<table class="grid" style="width: 100%">
+    <caption>{{include.caption}}</caption>
+    <colgroup>
+        <col width="20%" />
+        <col width="65%" />
+        <col width="15%" />
+    </colgroup>
+    <thead>
+        <tr class="header">
+            <th>Field</th>
+            <th>Description</th>
+            <th>Data Type</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entry in tableItems %}
+        <tr>
+          <td>{{ tableFile[entry].field }}<br/>
+          {% if tableFile[entry].required == true %}<span class="tableRequired">required</span>{% endif %}</td>
+          <td>{{tableFile[entry]description}}
+          {% if tableFile[entry].values != empty %}{{ tableFile[entry].values }}{% endif %}</td>
+          <td>{{ tableFile[entry].type }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
 															
 # Elementum-nibh
 
