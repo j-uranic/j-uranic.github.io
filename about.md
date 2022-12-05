@@ -51,8 +51,9 @@ Justo nec ultrices dui sapien eget mi. Aliquam malesuada bibendum arcu vitae. Co
 ## **Antibodies**  
 * ~~*N/A*~~
 
-Sit amet tellus [cras adipiscing enim](https://www.google.com/).
+<img src="/assets/placeholder.png">
 
+Sit amet tellus [cras adipiscing enim](https://www.google.com/).
 
 {% include about.md items="fastq.gz, tiff" file="data/directory-schema_spatialseq_v1.yaml" caption="Directory Structure" %}
 {% assign tableItems = include.items | split: ", " %}
