@@ -55,14 +55,6 @@ Justo nec ultrices dui sapien eget mi. Aliquam malesuada bibendum arcu vitae. Co
 
 Sit amet tellus [cras adipiscing enim](https://www.google.com/).
 
-{% for item in site.data.samplelist.toc %}
-<h3>{{item.title}}</h3>
-<ul>
-{% for entry in item.subfolderitems %}
-<li>{{entry.page}}</li>
-{% endfor %}
-</ul>
-{% endfor %}
 
 															
 # Elementum-nibh
