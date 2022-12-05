@@ -54,7 +54,7 @@ Justo nec ultrices dui sapien eget mi. Aliquam malesuada bibendum arcu vitae. Co
 Sit amet tellus [cras adipiscing enim](https://www.google.com/).
 
 
-{% include about.md items="fastq.gz, tiff" file="directory-schema_spatialseq_v1.yaml" caption="Directory Structure" %}
+{% include about.md items="fastq.gz, tiff" file="data/directory-schema_spatialseq_v1.yaml" caption="Directory Structure" %}
 {% assign tableItems = include.items | split: ", " %}
 {% assign tableFileParam = {{include.file}} %}
 {% assign tableFile = site.data[tableFileParam] %}
@@ -62,15 +62,21 @@ Sit amet tellus [cras adipiscing enim](https://www.google.com/).
 <table class="grid" style="width: 100%">
     <caption>{{include.caption}}</caption>
     <colgroup>
+        <col width="16%" />
+        <col width="16%" />
+        <col width="16%" />
+        <col width="16%" />
+        <col width="16%" />
         <col width="20%" />
-        <col width="65%" />
-        <col width="15%" />
     </colgroup>
     <thead>
         <tr class="header">
-            <th>Field</th>
+            <th>File</th>
+            <th>File type</th>
+            <th>Directory</th>
+            <th>Input file or precursor data</th>
+            <th>Generator program or pipeline with URL</th>
             <th>Description</th>
-            <th>Data Type</th>
         </tr>
     </thead>
     <tbody>
