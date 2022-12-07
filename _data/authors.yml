@@ -1,0 +1,12 @@
+-  firstname: John
+   lastname: Doe
+   age: 35
+   location: United States
+-  firstname: Jane
+   lastname: Doe
+   age: 29
+   location: France
+-  firstname: Jack
+   lastname: Hill
+   age: 25
+   location: Australia
