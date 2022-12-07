@@ -1,3 +1,9 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
 # Lorem Ipsum - Dolor
 													
 ## Sit Amet  
@@ -45,43 +51,15 @@ Justo nec ultrices dui sapien eget mi. Aliquam malesuada bibendum arcu vitae. Co
 
 ![Placeholder image](/assets/placeholder.png)
 
-{% include about.md items="lorem, ipsum" file="data/directory-schema_spatialseq_v1.yaml" caption="Directory Structure" %}
-{% assign tableItems = include.items | split: ", " %}
-{% assign tableFileParam = {{include.file}} %}
-{% assign tableFile = site.data[tableFileParam] %}
-
-<table class="grid" style="width: 100%">
-    <caption>{{include.caption}}</caption>
-    <colgroup>
-        <col width="16%" />
-        <col width="16%" />
-        <col width="16%" />
-        <col width="16%" />
-        <col width="16%" />
-        <col width="20%" />
-    </colgroup>
-    <thead>
-        <tr class="header">
-            <th>File</th>
-            <th>File type</th>
-            <th>Directory</th>
-            <th>Input file or precursor data</th>
-            <th>Generator program or pipeline with URL</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-    {% for entry in tableItems %}
-        <tr>
-          <td>{{ tableFile[entry].field }}<br/>
-          {% if tableFile[entry].required == true %}<span class="tableRequired">required</span>{% endif %}</td>
-          <td>{{tableFile[entry]description}}
-          {% if tableFile[entry].values != empty %}{{ tableFile[entry].values }}{% endif %}</td>
-          <td>{{ tableFile[entry].type }}</td>
-        </tr>
-    {% endfor %}
-    </tbody>
-</table>
+<ul>
+{% for member in site.data.members %}
+  <li>
+    <a href="https://github.com/{{ member.github }}">
+      {{ member.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
 															
 # Elementum-nibh
 
