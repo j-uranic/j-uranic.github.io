@@ -1,0 +1,17 @@
+-  file:"*.lorem.gz"
+   file_type:"[lorem](https://www.google.com)"
+   directory:"ipsum"
+   input_file_or_precursor_data:"Sed do eiusmod tempor"
+   generator_program_or_pipeline_URL:>
+    "[consectetur](https://www.google.com)"
+   description:>
+    "Duis aute irure dolor in reprehenderit. In voluptate velit esse cillum [dolore](https://www.google.org/)."
+-  file:"*.risus"
+   file_type:"[RISUS](https://www.google.com)"
+   directory:"justo"
+   input_file_or_precursor_data:"Enim nulla aliquet"
+   generator_program_or_pipeline_URL:>
+    "[Malesuada proin](https://www.google.com)"
+   description:>
+    "Leo vel orci porta non pulvinar neque laoreet suspendisse. Mauris pellentesque pulvinar pellentesque habitant. Enim nulla aliquet porttitor lacus luctus accumsan tortor."
+    
