@@ -45,11 +45,6 @@ Justo nec ultrices dui sapien eget mi. Aliquam malesuada bibendum arcu vitae. Co
 
 ![Placeholder image](/assets/placeholder.png)
 
-{% assign row = site.data.authors[0] %}
-{% for pair in row %}
-  {{ pair | inspect }}
-{% endfor %}
-
 <table>
   {% for row in site.data.authors %}
     {% if forloop.first %}
