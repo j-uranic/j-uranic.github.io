@@ -45,15 +45,28 @@ Justo nec ultrices dui sapien eget mi. Aliquam malesuada bibendum arcu vitae. Co
 
 ![Placeholder image](/assets/placeholder.png)
 
-<ul>
-{% for member in site.data.members %}
-  <li>
-    <a href="https://github.com/{{ member.github }}">
-      {{ member.name }}
-    </a>
-  </li>
+{% assign row = site.data.authors[0] %}
+{% for pair in row %}
+  {{ pair | inspect }}
 {% endfor %}
-</ul>
+
+<table>
+  {% for row in site.data.authors %}
+    {% if forloop.first %}
+    <tr>
+      {% for pair in row %}
+        <th>{{ pair[0] }}</th>
+      {% endfor %}
+    </tr>
+    {% endif %}
+
+    {% tablerow pair in row %}
+      {{ pair[1] }}
+    {% endtablerow %}
+  {% endfor %}
+</table>
+
+
 															
 # Elementum-nibh
 
