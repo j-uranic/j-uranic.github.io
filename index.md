@@ -46,7 +46,7 @@ Justo nec ultrices dui sapien eget mi. Aliquam malesuada bibendum arcu vitae. Co
 ![Placeholder image](/assets/placeholder.png)
 
 <table>
-  {% for row in site.data.authors %}
+  {% for row in site.data.spatialseq %}
     {% if forloop.first %}
     <tr>
       {% for pair in row %}
@@ -60,7 +60,6 @@ Justo nec ultrices dui sapien eget mi. Aliquam malesuada bibendum arcu vitae. Co
     {% endtablerow %}
   {% endfor %}
 </table>
-
 
 															
 # Elementum-nibh
