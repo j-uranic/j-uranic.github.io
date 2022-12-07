@@ -1,9 +1,3 @@
----
-layout: page
-title: About
-permalink: /about/
----
-
 # Lorem Ipsum - Dolor
 													
 ## Sit Amet  
