@@ -1,7 +1,7 @@
--  file: "*.lorem.gz"
-   file_type: "[lorem](https:www.google.com)"
-   directory: ipsum
-   input_file_or_precursor_data: Sed do eiusmod tempor
-   generator_program_or_pipeline_URL: "[consectetur](https://www.google.com)"
-   description: "Duis aute irure dolor in reprehenderit. In voluptate velit esse cillum [dolore](https://www.google.org/)."
+-  File: "*.lorem.gz"
+   File Type: "[lorem](https:www.google.com)"
+   Directory: ipsum
+   Input File or Precursor Data: Sed do eiusmod tempor
+   Generator program or pipeline with URL: "[consectetur](https://www.google.com)"
+   Description: "Duis aute irure dolor in reprehenderit. In voluptate velit esse cillum [dolore](https://www.google.org/)."
    
