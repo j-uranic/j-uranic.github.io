@@ -2,4 +2,191 @@
    Required?: yes
    Data type: categorical
    Description: There are currently two assay types, “Visium” and “Visium FFPE”.  To avoid confusion, especially with future 10x Genomics products, the first assay version using 3’ polyA capture on fresh frozen tissue will be referred to as “Visium Fresh Frozen”
-   
+-  Field: Visium Chemistry Version
+   Required?: yes
+   Data type: categorical
+   Description: Corresponding chemistry version to accommodate future releases of Fresh Frozen and FFPE capture chemistry.
+-  Field: Visium Slide Serial Number
+   Required?: yes
+   Data type: alphanumeric
+   Description: Serial number of the Visium Gene Expression Slide utilized.  This serial number is used to pull a GPR file that stores the locations of the capture area fiducials and spatial barcodes, specific to each slide.
+-  Field: Visium Probe Set URIVisium Chemistry Version
+   Required?: no
+   Data type: filepath
+   Description: Link to the probe set utilized for the FFPE version of assay
+-  Field: Visium permeabilization time value
+   Required?: yes
+   Data type: int
+   Description: Time used for tissue permeabilization during RNA extraction from tissue in Step 1.1 of the Visium protocol.
+-  Field: Visium permeabilization time unit
+   Required?: yes
+   Data type: categorical
+   Description: Unit of measure for “Visium permeabilization time value”.
+-  Field: Visium Staining Type
+   Required?: yes
+   Data type: categorical
+   Description: Staining used on the accompanying Visium slide for acquisition of tissue morphology information. Standard is hematoxylin and eosin stain (H&E) for basic morphology information imaged in bright-field, but fluorescent probes might be used for mRNA or protein level measurements.   
+-  Field: Visium Staining Protocol
+   Required?: yes
+   Data type: hyperlink
+   Description: Link to the protocol detailing the staining procedure
+-  Field: Visium Imaging Used Coverslip
+   Required?: yes
+   Data type: boolean
+   Description: Was a coverslip used during the image acquisition
+-  Field: Visium Image Resolution
+   Required?: yes
+   Data type: float
+   Description: Resolution of the capture area image (measured in microns per pixel (mpp))
+-  Field: Visium Image Is Serial Section
+   Required?: yes
+   Data type: boolean
+   Description: Is the high resolution image taken on a serial section?  This will be important when usage of the CytAssist or other tissue transfer protocols are developed. 
+-  Field: Visium Image Acquisition Instrument Vendor
+   Required?: yes
+   Data type: alphanumeric
+   Description: An acquisition instrument is the device that contains the signal detection hardware and signal processing software. Assays generate signals such as light of various intensities or color or signals representing the molecular mass.
+-  Field: Visium Image Acquisition Instrument Model
+   Required?: yes
+   Data type: alphanumeric
+   Description: Manufacturers of an acquisition instrument may offer various versions (models) of that instrument with different features or sensitivities. Differences in features or sensitivities may be relevant to processing or interpretation of the data.   
+-  Field: Visium Image Fluor Channel 1 probe
+   Required?: no
+   Data type: alphanumeric
+   Description: The affinity reagent conjugated to a fluorophore used for fluorescence staining and imaging.
+-  Field: Visium Image Fluor Channel 1 wavelength
+   Required?: no
+   Data type: int
+   Description: The wavelength (in nm) corresponding to the associated fluorophore.
+-  Field: Visium Image Fluor Channel 2 probe
+   Required?: no
+   Data type: alphanumeric
+   Description: The affinity reagent conjugated to a fluorophore used for fluorescence staining and imaging.
+-  Field: Visium Image Fluor Channel 2 wavelength
+   Required?: no
+   Data type: int
+   Description: The wavelength (in nm) corresponding to the associated fluorophore.
+-  Field: Visium Image Fluor Channel 3 probe
+   Required?: no
+   Data type: alphanumeric
+   Description: The affinity reagent conjugated to a fluorophore used for fluorescence staining and imaging. 
+-  Field: Visium Image Fluor Channel 3 wavelength
+   Required?: no
+   Data type: int
+   Description: The wavelength (in nm) corresponding to the associated fluorophore.
+-  Field: Visium Image Fluor Channel 4 probe
+   Required?: no
+   Data type: alphanumeric
+   Description: The affinity reagent conjugated to a fluorophore used for fluorescence staining and imaging.
+-  Field: Visium Image Fluor Channel 4 wavelength
+   Required?: no
+   Data type: int
+   Description: The wavelength (in nm) corresponding to the associated fluorophore.
+-  Field: Library ID
+   Required?: yes
+   Data type: alphanumeric
+   Description: A library ID, unique within a TMC.
+-  Field: Capture Area ID
+   Required?: yes
+   Data type: categorical
+   Description: Visium capture area identifier
+-  Field: Mapping Area
+   Required?: yes
+   Data type: float
+   Description: Total size of mapping area (um*um)
+-  Field: Spot Size (x)
+   Required?: yes
+   Data type: int
+   Description: Spot horizontal length (um)
+-  Field: Spot Size (y)
+   Required?: yes
+   Data type: int
+   Description: Spot vertical length (um)
+-  Field: Spot Geometry
+   Required?: yes
+   Data type: categorical
+   Description: Geometric shape of each spot
+-  Field: Number of Spots
+   Required?: yes
+   Data type: int
+   Description: Total number of spots in the mapping area   
+-  Field: Spot Spacing (x)
+   Required?: yes
+   Data type: int
+   Description: Center-to-center inter-spot space horizontally   
+-  Field: Spot Spacing (y)
+   Required?: yes
+   Data type: int
+   Description: Center-to-center inter-spot space vertically
+-  Field: Fraction Spots Covered
+   Required?: yes
+   Data type: float
+   Description: Approximate number of spots in the mapping area covered by tissue  
+-  Field: Spot Barcode Read
+   Required?: yes
+   Data type: categorical
+   Description: Sequencing read in which the 10x Genomics spatial barcode resides
+-  Field: Spot Barcode Offset
+   Required?: yes
+   Data type: int
+   Description: Number of base pairs (bp) from the start of the read where the spatial barcode is located
+-  Field: Spot Barcode Size
+   Required?: yes
+   Data type: int
+   Description: Length of the 10x Genomics spatial barcode
+-  Field: cDNA Amplification PCR cycles
+   Required?: yes
+   Data type: int
+   Description: Refers to the number of PCR cycles in the amplification step; this varies according to the target number cells captured
+-  Field: Visium Library Index Set
+   Required?: yes
+   Data type: Pattern ^DI-TS-[A-H]\d{1,2}
+   Description: The specific 10x Genomics provided index set used for sequencing multiplexing.   
+-  Field: Library Construction Protocol
+   Required?: yes
+   Data type: hyperlink
+   Description: A link to the protocol document containing the library construction method (including version) that was used.
+-  Field: Library Sequence Adapter
+   Required?: yes
+   Data type: Pattern [ATCG]+(\+[ATCG]+)?
+   Description: Adapter sequence to be used for adapter trimming.
+-  Field: Library Average Fragment Size
+   Required?: yes
+   Data type: int
+   Description: Average size in basepairs (bp) of sequencing library fragments estimated via gel electrophoresis or bioanalyzer/tapestation.   
+-  Field: Library Final Yield value
+   Required?: yes
+   Data type: float
+   Description: Total number of ng of library after final pcr amplification step. This is the concentration (ng/ul) * volume (ul)
+-  Field: Library Final Yield unit
+   Required?: yes
+   Data type: category
+   Description: Units of final library yield. Leave blank if not applicable. 
+-  Field: Library PCR Cycles
+   Required?: yes
+   Data type: int
+   Description: Number of PCR cycles determined for the cDNA amplification step; this usually is determined via qPCR.      
+-  Field: Library PCR Cycles For Sample Index
+   Required?: yes
+   Data type: int
+   Description: Number of PCR cycles performed for library indexing.
+-  Field: Is Technical Replicate
+   Required?: yes
+   Data type: boolean
+   Description: Is the sequencing reaction run in replicate   
+-  Field: Sequencing PhiX Amount
+   Required?: yes
+   Data type: float
+   Description: Percent PhiX loaded to the run.
+-  Field: Sequencing read format
+   Required?: yes
+   Data type: Pattern \d+(/\d+)+
+   Description: Slash-delimited list of the number of sequencing cycles for, for example, Read1, i7 index, i5 index, and Read2. Example: 12/34/56.   
+-  Field: Sequencing read Q30
+   Required?: yes
+   Data type: int
+   Description: Q30 is the weighted average of all the reads (e.g. # bases UMI * q30 UMI + # bases R2 * q30 R2 + …)  
+-  Field: Sequencing Reagent Kit
+   Required?: yes
+   Data type: alphanumeric
+   Description: Reagent kit used for sequencing.
