@@ -181,7 +181,8 @@
 -  Field: Sequencing read format
    Required?: yes
    Data type: Pattern \d+(/\d+)+
-   Description: Slash-delimited list of the number of sequencing cycles for, for example, Read1, i7 index, i5 index, and Read2. Example: 12/34/56.   
+   Description: |
+   Slash-delimited list of the number of sequencing cycles for, for example, Read1, i7 index, i5 index, and Read2. Example: 12/34/56.   
 -  Field: Sequencing read Q30
    Required?: yes
    Data type: int
@@ -190,3 +191,4 @@
    Required?: yes
    Data type: alphanumeric
    Description: Reagent kit used for sequencing.
+ 
