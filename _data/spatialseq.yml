@@ -23,7 +23,7 @@
    Generator program or pipeline with URL: spaceranger (https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/what-is-space-ranger)
    Description: A filtered feature-barcode matrix, including only tissue-associated barcodes. See software documentation (https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/matrices).
 -  File: "molecule_info.h5"
-   File Type:  File Type: HDF5 (https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/advanced/h5_matrices)
+   File Type: HDF5 (https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/advanced/h5_matrices)
    Directory:  lab/processed
    Input File or Precursor Data: fastq
    Generator program or pipeline with URL: spaceranger (https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/what-is-space-ranger)
