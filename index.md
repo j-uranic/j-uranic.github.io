@@ -104,7 +104,7 @@ Files and Directories
 
 -   *Files containing the metadata should also be included when relevant, for example, the TSV with assay-level metadata, the antibodies TSV, a file with the pipeline parameters, etc.*
 
--   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.*
+-   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.* 
 
 <table>
   {% for row in site.data.spatialseq %}
