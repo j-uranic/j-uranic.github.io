@@ -1,6 +1,6 @@
 files:
 -  file: "*.fastq.gz"
-   file-type: <a href="https://en.wikipedia.org/wiki/FASTQ_format">fastq</a>
+   file-type: fastq (https://en.wikipedia.org/wiki/FASTQ_format)
    directory: raw
    input-file: BCL files from Illumina sequencer
    generator-program: bc2fastq2 (https://support.illumina.com/downloads/bcl2fastq-conversion-software-v2-20.html)
