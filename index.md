@@ -106,7 +106,9 @@ Files and Directories
 
 -   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.* 
 
-{{ site.data.spatialseq.file-type }}
+ {% assign test = "https://www.google.com" %} 
+ {% if test contains "http" %} <a href="http://www.google.com">link</a>
+ {% endif %}
 
 <table>
   {% for row in site.data.spatialseq %}
