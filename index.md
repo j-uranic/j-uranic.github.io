@@ -106,22 +106,6 @@ Files and Directories
 
 -   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.* 
 
-<table>
-  {% for row in site.data.spatialseq %}
-    {% if forloop.first %}
-    <tr>
-      {% for pair in row %}
-        <th>{{ pair[0] }}</th>
-      {% endfor %}
-    </tr>
-    {% endif %}
-
-    {% tablerow pair in row %}
-      {{ pair[1] }}
-    {% endtablerow %}
-  {% endfor %}
-</table>
-
 Note:
 
 If the spaceranger pipeline is not utilized, there must be a GPR file specific to the Visium slide included in these outputs. This contains the specific spatial barcodes utilized for each of the capture areas on the slide, as well as their spatial coordinates. Utilizing the wrong GPR file/slide serial number can lead to rotated spatial data relative to the images, or in the worst case completely nonsensical data.
