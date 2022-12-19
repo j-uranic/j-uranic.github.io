@@ -106,6 +106,8 @@ Files and Directories
 
 -   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.* 
 
+{{ site.data.spatialseq.file-type }}
+
 <table>
   {% for row in site.data.spatialseq %}
     {% if forloop.first %}
