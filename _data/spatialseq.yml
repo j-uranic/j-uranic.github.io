@@ -1,6 +1,6 @@
 files:
 -  file: "*.fastq.gz"
-   file-type: fastq (https://en.wikipedia.org/wiki/FASTQ_format)
+   file-type: TIFF (https://docs.openmicroscopy.org/ome-model/5.6.3/ome-tiff/)
    directory: raw
    input-file: BCL files from Illumina sequencer
    generator-program: bc2fastq2 (https://support.illumina.com/downloads/bcl2fastq-conversion-software-v2-20.html)
