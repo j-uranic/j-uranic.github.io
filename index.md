@@ -106,7 +106,7 @@ Files and Directories
 
 -   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.*
 
-<div>{{ 'site.data.spatialseq.file-type'|trans({'fastq': "https://en.wikipedia.org/wiki/FASTQ_format"})|raw }}</div>
+{{ site.data.spatialseq.file-type }}
 
 <table>
   {% for row in site.data.spatialseq %}
