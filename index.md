@@ -106,6 +106,15 @@ Files and Directories
 
 -   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.* 
 
+{% if site.data.spatialseq %}
+    {% assign list = site.data.spatialseq %}
+    {% for entry in list %}
+      {% assign key = entry | first %}
+        File: {{ list[key].file}} 
+        File Type: {{ list[key].file-type }}
+    {% endfor %}
+{% endif %}
+
  {% assign test = "https://www.google.com" %} 
  {% if test contains "http" %} <a href="http://www.google.com">link</a>
  {% endif %}
