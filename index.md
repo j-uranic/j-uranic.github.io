@@ -105,9 +105,8 @@ Files and Directories
 -   *Files containing the metadata should also be included when relevant, for example, the TSV with assay-level metadata, the antibodies TSV, a file with the pipeline parameters, etc.*
 
 -   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.*
-{% for row in site.data.spatialseq %}
-{% if site.data.spatialseq.file-type contains "http" %}<a href="https://www.google.com">Link</a>{% endif %}
-{% endfor %}
+
+<div>{{ 'site.data.spatialseq.file-type'|trans({'fastq': "https://en.wikipedia.org/wiki/FASTQ_format"})|raw}}</div>
 
 <table>
   {% for row in site.data.spatialseq %}
