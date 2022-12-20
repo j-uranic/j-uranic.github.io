@@ -120,7 +120,7 @@ Files and Directories
     </tr>
     {% endif %}
 
-    {% tablerow pair in row %}
+    {%- tablerow pair in row -%}
       {{ pair[1] | markdownify }}
     {% endtablerow %}
   {% endfor %}
