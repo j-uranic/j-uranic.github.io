@@ -122,6 +122,7 @@ Files and Directories
         {% assign link = pair %}
         <a href="{{ link }}"linktext</a>
         {{ pair[1] | markdownify }}
+      {% endif %}
     {% endtablerow %}
   {% endfor %}
 </table>
