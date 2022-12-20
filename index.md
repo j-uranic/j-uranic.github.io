@@ -106,16 +106,6 @@ Files and Directories
 
 -   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.* 
 
-{% if site.data.spatialseq %}
-{% assign list = site.data.spatialseq -%}
-{% for entry in list %}
-{% assign key = entry | first -%}
-File: {{ list[key].file | markdownify }} 
-File Type: {{ list[key].file-type | markdownify }}
-{% endfor %}
-{% endif %}
-
-
 <table>
   {% for row in site.data.spatialseq %}
     {% if forloop.first %}
