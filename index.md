@@ -121,13 +121,13 @@ File Type: {{ list[key].file-type | markdownify }}
     {% if forloop.first %}
     <tr>
       {% for pair in row %}
-        <th>{{ pair[0] }}</th>
+        <th>{{ pair[0] | markdownify }}</th>
       {% endfor %}
     </tr>
     {% endif %}
 
     {% tablerow pair in row %}
-      {{ pair[1] }}
+      {{ pair[1] | markdownify }}
     {% endtablerow %}
   {% endfor %}
 </table>
