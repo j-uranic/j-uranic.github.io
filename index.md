@@ -110,8 +110,8 @@ Files and Directories
 {% assign list = site.data.spatialseq -%}
 {% for entry in list %}
 {% assign key = entry | first -%}
-File: {{ list[key].file}} 
-File Type: {{ list[key].file-type }}
+File: {{ list[key].file | markdownify }} 
+File Type: {{ list[key].file-type | markdownify }}
 {% endfor %}
 {% endif %}
 
