@@ -106,7 +106,6 @@ Files and Directories
 
 -   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.* 
 
-{{ site.data.spatialseq | markdownify }}
 {% if site.data.spatialseq %}
 {% assign list = site.data.spatialseq -%}
 {% for entry in list %}
