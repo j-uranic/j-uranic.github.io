@@ -106,6 +106,10 @@ Files and Directories
 
 -   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.* 
 
+
+{{ 'Link' | link_to: 'http://www.google.com' }}
+
+
 <table>
   {% for row in site.data.spatialseq %}
     {% if forloop.first %}
