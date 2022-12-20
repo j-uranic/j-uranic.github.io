@@ -107,25 +107,7 @@ Files and Directories
 -   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.* 
 
 
-<table>
-  {% for row in site.data.spatialseq %}
-    {% if forloop.first %}
-    <tr>
-      {% for pair in row %}
-        <th> {{ pair[0] | markdownify }} </th>
-      {% endfor %}
-    </tr>
-    {% endif %}
-    
-    {% tablerow pair in row%}
-      {% if pair contains "http" %}
-        {% assign link = pair %}
-        <a href="{{ link }}"linktext</a>
-        {{ pair[1] | markdownify }}
-      {% endif %}
-    {% endtablerow %}
-  {% endfor %}
-</table>
+{{ 'Shopify' | link_to: 'https://www.shopify.com','A link to Shopify' }}
 
 
 <table>
