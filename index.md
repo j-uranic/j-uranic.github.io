@@ -109,7 +109,7 @@ Files and Directories
 
 <table>
   {% for row in site.data.spatialseq %}
-    {% if forloop first %}
+    {% if forloop.first %}
     <tr>
       {% for pair in row %}
         <th> {{ pair[0] | markdownify }} </th>
