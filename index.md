@@ -107,7 +107,10 @@ Files and Directories
 -   *THE FOLLOWING TABLE IS AN EXAMPLE AND SHOULD BE EDITED AS APPROPRIATE.* 
 
 
-{{ 'Shopify' | link_to: 'https://www.shopify.com','A link to Shopify' }}
+{% for row in site.data.spatialseq %}
+  {% assign link = File Type %}
+  <a href="{{ link }}">Link Text</a>
+{% endfor %}
 
 
 <table>
