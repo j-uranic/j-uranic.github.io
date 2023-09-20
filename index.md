@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
+_includes/linktest.yaml
 
 # Lorem Ipsum - Dolor
 													
